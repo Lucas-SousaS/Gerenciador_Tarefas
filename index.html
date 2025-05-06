@@ -7,24 +7,37 @@
     <link rel="stylesheet" href="./Style/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body>
-
+  <body id="body">
     <div class="w-[60vw] relative flex justify-center items-center">
-        <h1 class="absolute left-[0%] top-[-30%] font-semibold text-2xl">
-            Criar tarefas
-        </h1>
+      <h1 class="absolute left-[0%] top-[-30%] font-semibold text-2xl">
+        Criar tarefas
+      </h1>
 
-        <form class="bg-[#F5F5F5] flex flex-col items-center justify-center gap-4 p-6 rounded">
-            <div class="flex flex-col">
-                <label for="titulo" class="text-gray-600">Título</label>
-                <input type="text" name="titulo" id="titulo" class="bg-white rounded outline-hidden p-1">
-            </div>
-            <div class="flex flex-col">
-                <label for="conteudo" class="text-gray-600">Conteúdo</label>
-                <input type="text" name="conteudo" id="conteudo" class="bg-white rounded outline-hidden p-1">
-            </div>
-            <button class="bg-blue-600 text-white rounded-md p-2">Criar tarefa</button>
-        </form>
+      <form
+        class="bg-[#F5F5F5] flex flex-col items-center justify-center gap-4 p-6 rounded"
+      >
+        <div class="flex flex-col">
+          <label for="titulo" class="text-gray-600">Título</label>
+          <input
+            type="text"
+            name="titulo"
+            id="titulo"
+            class="bg-white rounded outline-hidden p-1"
+          />
+        </div>
+        <div class="flex flex-col">
+          <label for="conteudo" class="text-gray-600">Conteúdo</label>
+          <input
+            type="text"
+            name="conteudo"
+            id="conteudo"
+            class="bg-white rounded outline-hidden p-1"
+          />
+        </div>
+        <button class="bg-blue-600 text-white rounded-md p-2">
+          Criar tarefa
+        </button>
+      </form>
     </div>
 
     <div class="w-[60vw] relative flex justify-center items-center mt-[80px]">
@@ -39,65 +52,10 @@
         <img src="./Assets/arrow-left-solid.svg" class="h-10" alt="" />
       </button>
 
-      <div class="flex gap-8">
-        <div class="bg-[#F5F5F5] w-fit p-4 rounded flex flex-col items-center justify-center gap-4 shadow">
-            <div class="flex gap-6">
-              <div>
-                <h1 class="font-bold text-gray-800">Título da Tarefa</h1>
-                <p class="text-gray-600">Descrição da tarefa</p>
-              </div>
-              <div class="flex items-center justify-center gap-2">
-                <img src="./Assets/check-solid.svg" alt="Concluir" class="h-4 cursor-pointer" />
-                <img src="./Assets/pen-solid.svg" alt="Editar" class="h-4 cursor-pointer" />
-                <img src="./Assets/trash-solid.svg" alt="Excluir" class="h-4 cursor-pointer" />
-              </div>
-            </div>
-          
-            <button class="font-medium text-sm text-blue-600 cursor-pointer hover:underline transition-all">
-              Ver Tarefa
-            </button>
-          </div>
-          
-
-          <div class="bg-[#F5F5F5] w-fit p-4 rounded flex flex-col items-center justify-center gap-4 shadow">
-            <div class="flex gap-6">
-              <div>
-                <h1 class="font-bold text-gray-800">Título da Tarefa</h1>
-                <p class="text-gray-600">Descrição da tarefa</p>
-              </div>
-              <div class="flex items-center justify-center gap-2">
-                <img src="./Assets/check-solid.svg" alt="Concluir" class="h-4 cursor-pointer" />
-                <img src="./Assets/pen-solid.svg" alt="Editar" class="h-4 cursor-pointer" />
-                <img src="./Assets/trash-solid.svg" alt="Excluir" class="h-4 cursor-pointer" />
-              </div>
-            </div>
-          
-            <button class="font-medium text-sm text-blue-600 cursor-pointer hover:underline transition-all">
-              Ver Tarefa
-            </button>
-          </div>
-          
-
-          <div class="bg-[#F5F5F5] w-fit p-4 rounded flex flex-col items-center justify-center gap-4 shadow">
-            <div class="flex gap-6">
-              <div>
-                <h1 class="font-bold text-gray-800">Título da Tarefa</h1>
-                <p class="text-gray-600">Descrição da tarefa</p>
-              </div>
-              <div class="flex items-center justify-center gap-2">
-                <img src="./Assets/check-solid.svg" alt="Concluir" class="h-4 cursor-pointer" />
-                <img src="./Assets/pen-solid.svg" alt="Editar" class="h-4 cursor-pointer" />
-                <img src="./Assets/trash-solid.svg" alt="Excluir" class="h-4 cursor-pointer" />
-              </div>
-            </div>
-          
-            <button class="font-medium text-sm text-blue-600 cursor-pointer hover:underline transition-all">
-              Ver Tarefa
-            </button>
-          </div>
-          
+      <div class="flex gap-8 min-h-30">
+        <h1>Adicione uma Tarefa</h1>
       </div>
     </div>
   </body>
-  <script src="Script/main.js"></script>
+  <script src="Script/main.js" type="module"></script>
 </html>
